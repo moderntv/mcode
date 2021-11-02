@@ -144,7 +144,8 @@
 	<rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
 	<rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/>
 	<rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/>
-	<rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable">
+	<rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
+	<rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments">
 		<properties>
 			<property name="forbiddenCommentPatterns" type="array">
 				<element value="~^(?:(?!private|protected|static)\S+ )?(?:con|de)structor\.\z~i"/>
