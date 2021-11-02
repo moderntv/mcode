@@ -1,0 +1,5 @@
+includes:
+	#- ../../../phpstan/phpstan-deprecation-rules/rules.neon
+	- ../../../phpstan/phpstan-nette/extension.neon
+	- ../../../phpstan/phpstan-nette/rules.neon
+	#- ../../../phpstan/phpstan-strict-rules/rules.neon
