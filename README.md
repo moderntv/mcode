@@ -1,4 +1,4 @@
-<h1 align=center>moderntv / mstyle</h1>
+<h1 align=center>mCODE</h1>
 
 <p align=center>
    📺 PHP quality assurance for ModernTV projects.
@@ -21,10 +21,10 @@
 
 ## Usage
 
-To install latest version of `moderntv/mstyle` use [Composer](https://getcomposer.com).
+To install latest version of `mcode/mcode` use [Composer](https://getcomposer.com).
 
 ```bash
-composer require moderntv/mstyle
+composer require mcode/mcode
 ```
 
 ## Documentation
@@ -35,7 +35,7 @@ composer require moderntv/mstyle
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
   <ruleset>
-    <rule ref="./vendor/moderntv/mstyle/src/codesniffer.xml"/>
+    <rule ref="./vendor/mcode/mcode/src/codesniffer.xml"/>
   </ruleset>
   ```
 
