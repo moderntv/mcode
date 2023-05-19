@@ -268,7 +268,6 @@
 	<rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
-	<rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing"/>
 	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
 		<properties>
@@ -296,6 +295,8 @@
 
 				<element value="private static properties"/>
 				<element value="private properties"/>
+
+                <element value="enum cases"/>
 
 				<element value="constructor"/>
 				<element value="destructor"/>
