@@ -281,7 +281,6 @@
 	</rule>
 	<rule ref="SlevomatCodingStandard.Classes.ClassStructure">
 		<properties>
-			<property name="enableFinalMethods" value="true"/>
 			<property name="groups" type="array">
 				<element value="uses"/>
 
