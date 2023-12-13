@@ -1,2 +1,6 @@
+# Editor
+.idea
+.vscode
+
 /vendor
 /composer.lock
