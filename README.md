@@ -5,12 +5,12 @@
 </p>
 
 <p align=center>
-  <a href="https://github.com/moderntv/mstyle/actions"><img src="https://badgen.net/github/checks/moderntv/mstyle/master?cache=300"></a>
-  <a href="https://coveralls.io/r/moderntv/mstyle"><img src="https://badgen.net/coveralls/c/github/moderntv/mstyle?cache=300"></a>
-  <a href="https://packagist.org/packages/moderntv/mstyle"><img src="https://badgen.net/packagist/dm/moderntv/mstyle"></a>
-  <a href="https://packagist.org/packages/moderntv/mstyle"><img src="https://badgen.net/packagist/v/moderntv/mstyle"></a>
-  <a href="https://packagist.org/packages/moderntv/mstyle"><img src="https://badgen.net/packagist/php/moderntv/mstyle"></a>
-  <a href="https://github.com/moderntv/mstyle"><img src="https://badgen.net/github/license/moderntv/mstyle"></a>
+  <a href="https://github.com/moderntv/mcode/actions"><img src="https://badgen.net/github/checks/moderntv/mcode/master?cache=300"></a>
+  <a href="https://coveralls.io/r/moderntv/mcode"><img src="https://badgen.net/coveralls/c/github/moderntv/mcode?cache=300"></a>
+  <a href="https://packagist.org/packages/mcode/mcode"><img src="https://badgen.net/packagist/dm/mcode/mcode"></a>
+  <a href="https://packagist.org/packages/mcode/mcode"><img src="https://badgen.net/packagist/v/mcode/mcode"></a>
+  <a href="https://packagist.org/packages/mcode/mcode"><img src="https://badgen.net/packagist/php/mcode/mcode"></a>
+  <a href="https://github.com/moderntv/mcode"><img src="https://badgen.net/github/license/moderntv/mcode"></a>
 </p>
 
 <p align=center>
