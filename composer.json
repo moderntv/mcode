@@ -18,10 +18,10 @@
     "php": ">=8.4",
     "mockery/mockery": "^1.6.12",
     "php-parallel-lint/php-parallel-lint": "^1.4.0",
-    "phpstan/phpstan": "2.1.5",
-    "phpstan/phpstan-deprecation-rules": "2.0.1",
-    "phpstan/phpstan-nette": "2.0.1",
-    "phpstan/phpstan-strict-rules": "2.0.0",
+    "phpstan/phpstan": "2.1.36",
+    "phpstan/phpstan-deprecation-rules": "^2.0.1",
+    "phpstan/phpstan-nette": "^2.0.1",
+    "phpstan/phpstan-strict-rules": "^2.0.0",
     "phpunit/phpunit": "^12.4.2",
     "slevomat/coding-standard": "^8.24.0",
     "squizlabs/php_codesniffer": "^4.0.0"
@@ -36,7 +36,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.4.x-dev"
+      "dev-master": "0.5.x-dev"
     }
   }
 }
