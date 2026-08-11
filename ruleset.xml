@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="mCODE">
+	<description>Self-check of the shipped ruleset.</description>
+
+	<rule ref="./src/codesniffer.xml"/>
+</ruleset>

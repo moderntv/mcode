@@ -1,0 +1,11 @@
+includes:
+	- vendor/phpstan/phpstan-nette/extension.neon
+	- vendor/phpstan/phpstan-nette/rules.neon
+
+parameters:
+	level: max
+	phpVersion: 80400
+
+	paths:
+		- tests/Cases
+		- tests/Toolkit
