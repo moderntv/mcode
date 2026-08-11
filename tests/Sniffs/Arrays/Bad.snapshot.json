@@ -1,0 +1,30 @@
+{
+    "errors": 4,
+    "warnings": 0,
+    "messages": [
+        {
+            "line": 16,
+            "column": 18,
+            "type": "ERROR",
+            "source": "Generic.Arrays.DisallowLongArraySyntax.Found"
+        },
+        {
+            "line": 19,
+            "column": 15,
+            "type": "ERROR",
+            "source": "Squiz.Arrays.ArrayBracketSpacing.SpaceAfterBracket"
+        },
+        {
+            "line": 19,
+            "column": 21,
+            "type": "ERROR",
+            "source": "Squiz.Arrays.ArrayBracketSpacing.SpaceBeforeBracket"
+        },
+        {
+            "line": 22,
+            "column": 9,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation.ImplicitArrayCreationUsed"
+        }
+    ]
+}

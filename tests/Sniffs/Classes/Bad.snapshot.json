@@ -1,0 +1,66 @@
+{
+    "errors": 9,
+    "warnings": 1,
+    "messages": [
+        {
+            "line": 12,
+            "column": 5,
+            "type": "WARNING",
+            "source": "PSR12.Properties.ConstantVisibility.NotFound"
+        },
+        {
+            "line": 12,
+            "column": 5,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Classes.ClassConstantVisibility.MissingConstantVisibility"
+        },
+        {
+            "line": 12,
+            "column": 11,
+            "type": "ERROR",
+            "source": "Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase"
+        },
+        {
+            "line": 15,
+            "column": 12,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition.DisallowedMultiConstantDefinition"
+        },
+        {
+            "line": 18,
+            "column": 5,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition.DisallowedMultiPropertyDefinition"
+        },
+        {
+            "line": 18,
+            "column": 17,
+            "type": "ERROR",
+            "source": "PSR2.Classes.PropertyDeclaration.Multiple"
+        },
+        {
+            "line": 18,
+            "column": 17,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Classes.PropertySpacing.IncorrectCountOfBlankLinesAfterProperty"
+        },
+        {
+            "line": 27,
+            "column": 18,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Classes.ModernClassNameReference.ClassNameReferencedViaFunctionCall"
+        },
+        {
+            "line": 30,
+            "column": 49,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants.DisallowedLateStaticBindingForConstant"
+        },
+        {
+            "line": 30,
+            "column": 49,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Classes.UselessLateStaticBinding.UselessLateStaticBinding"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "errors": 6,
+    "warnings": 0,
+    "messages": [
+        {
+            "line": 13,
+            "column": 18,
+            "type": "ERROR",
+            "source": "Squiz.WhiteSpace.OperatorSpacing.NoSpaceAfter"
+        },
+        {
+            "line": 13,
+            "column": 18,
+            "type": "ERROR",
+            "source": "Squiz.WhiteSpace.OperatorSpacing.NoSpaceBefore"
+        },
+        {
+            "line": 16,
+            "column": 17,
+            "type": "ERROR",
+            "source": "Generic.Formatting.SpaceAfterCast.NoSpace"
+        },
+        {
+            "line": 19,
+            "column": 21,
+            "type": "ERROR",
+            "source": "Squiz.WhiteSpace.SemicolonSpacing.Incorrect"
+        },
+        {
+            "line": 22,
+            "column": 16,
+            "type": "ERROR",
+            "source": "Generic.WhiteSpace.IncrementDecrementSpacing.SpaceAfterIncrement"
+        },
+        {
+            "line": 25,
+            "column": 23,
+            "type": "ERROR",
+            "source": "Squiz.WhiteSpace.LogicalOperatorSpacing.TooMuchSpaceBefore"
+        }
+    ]
+}

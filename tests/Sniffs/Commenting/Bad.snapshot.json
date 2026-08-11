@@ -1,0 +1,42 @@
+{
+    "errors": 6,
+    "warnings": 0,
+    "messages": [
+        {
+            "line": 8,
+            "column": 4,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden"
+        },
+        {
+            "line": 9,
+            "column": 4,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden"
+        },
+        {
+            "line": 14,
+            "column": 5,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"
+        },
+        {
+            "line": 19,
+            "column": 5,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment"
+        },
+        {
+            "line": 22,
+            "column": 8,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden"
+        },
+        {
+            "line": 30,
+            "column": 8,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation"
+        }
+    ]
+}

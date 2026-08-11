@@ -1,0 +1,42 @@
+{
+    "errors": 6,
+    "warnings": 0,
+    "messages": [
+        {
+            "line": 17,
+            "column": 26,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Functions.StaticClosure.ClosureNotStatic"
+        },
+        {
+            "line": 20,
+            "column": 5,
+            "type": "ERROR",
+            "source": "Squiz.WhiteSpace.FunctionSpacing.After"
+        },
+        {
+            "line": 25,
+            "column": 16,
+            "type": "ERROR",
+            "source": "Generic.PHP.ForbiddenFunctions.FoundWithAlternative"
+        },
+        {
+            "line": 29,
+            "column": 32,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.Functions.UselessParameterDefaultValue.UselessParameterDefaultValue"
+        },
+        {
+            "line": 29,
+            "column": 49,
+            "type": "ERROR",
+            "source": "PEAR.Functions.ValidDefaultValue.NotAtEnd"
+        },
+        {
+            "line": 32,
+            "column": 16,
+            "type": "ERROR",
+            "source": "Squiz.PHP.LowercasePHPFunctions.CallUppercase"
+        }
+    ]
+}

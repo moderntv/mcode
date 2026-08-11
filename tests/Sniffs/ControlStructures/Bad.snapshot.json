@@ -1,0 +1,42 @@
+{
+    "errors": 6,
+    "warnings": 0,
+    "messages": [
+        {
+            "line": 13,
+            "column": 15,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.ControlStructures.DisallowYodaComparison.DisallowedYodaComparison"
+        },
+        {
+            "line": 17,
+            "column": 9,
+            "type": "ERROR",
+            "source": "PSR2.ControlStructures.ElseIfDeclaration.NotAllowed"
+        },
+        {
+            "line": 22,
+            "column": 29,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.ControlStructures.UselessTernaryOperator.UselessTernaryOperator"
+        },
+        {
+            "line": 25,
+            "column": 19,
+            "type": "ERROR",
+            "source": "Generic.PHP.LowerCaseKeyword.Found"
+        },
+        {
+            "line": 25,
+            "column": 19,
+            "type": "ERROR",
+            "source": "Squiz.Operators.ValidLogicalOperators.NotAllowed"
+        },
+        {
+            "line": 30,
+            "column": 26,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.PHP.UselessParentheses.UselessParentheses"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types = 1);
+
+namespace Tests;
+
+use Tests\Toolkit\Codesniffer;
+
+/**
+ * Regenerates snapshots for the ruleset tests.
+ *
+ * Usage:
+ *   php bin/snapshots
+ */
+
+$root = dirname(__DIR__);
+
+require $root . '/vendor/autoload.php';
+require $root . '/tests/Toolkit/Codesniffer.php';
+
+$sniffs = Codesniffer::sniffs();
+file_put_contents(
+    $root . '/tests/sniffs.snapshot.json',
+    json_encode($sniffs, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n",
+);
+printf("Generated: tests/sniffs.snapshot.json (%d sniffs)\n", count($sniffs));
+
+$fixtures = glob($root . '/tests/Sniffs/*/*.php') ?: [];
+sort($fixtures);
+
+foreach ($fixtures as $fixture) {
+    $report = Codesniffer::analyse($fixture);
+
+    file_put_contents(
+        substr($fixture, 0, -4) . '.snapshot.json',
+        json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n",
+    );
+
+    printf(
+        "Generated: %s (%d errors, %d warnings)\n",
+        ltrim(str_replace($root, '', substr($fixture, 0, -4) . '.snapshot.json'), '/'),
+        $report['errors'],
+        $report['warnings'],
+    );
+}
+
+printf("\nDone. %d fixtures.\n", count($fixtures));

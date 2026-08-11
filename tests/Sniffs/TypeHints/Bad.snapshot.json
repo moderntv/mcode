@@ -1,0 +1,60 @@
+{
+    "errors": 9,
+    "warnings": 0,
+    "messages": [
+        {
+            "line": 12,
+            "column": 12,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint"
+        },
+        {
+            "line": 12,
+            "column": 12,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint"
+        },
+        {
+            "line": 12,
+            "column": 12,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint"
+        },
+        {
+            "line": 21,
+            "column": 8,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.LongTypeHints.UsedLongTypeHint"
+        },
+        {
+            "line": 22,
+            "column": 8,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.LongTypeHints.UsedLongTypeHint"
+        },
+        {
+            "line": 22,
+            "column": 8,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition.NullTypeHintNotOnLastPosition"
+        },
+        {
+            "line": 24,
+            "column": 12,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint"
+        },
+        {
+            "line": 24,
+            "column": 12,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint"
+        },
+        {
+            "line": 30,
+            "column": 34,
+            "type": "ERROR",
+            "source": "SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue.NullabilityTypeMissing"
+        }
+    ]
+}
