@@ -1,0 +1,53 @@
+name: "Lint"
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+  push:
+    branches: ["*"]
+
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  lint85:
+    name: "Lint"
+    uses: contributte/.github/.github/workflows/php.yml@master
+    with:
+      name: "Lint"
+      run: "make lint"
+      php: "8.5"
+
+  lint84:
+    name: "Lint"
+    uses: contributte/.github/.github/workflows/php.yml@master
+    with:
+      name: "Lint"
+      run: "make lint"
+      php: "8.4"
+
+  neon:
+    name: "Neon"
+    uses: contributte/.github/.github/workflows/php.yml@master
+    with:
+      name: "Neon"
+      run: "make neon"
+      php: "8.4"
+
+  composer:
+    name: "Composer"
+    uses: contributte/.github/.github/workflows/php.yml@master
+    with:
+      name: "Composer"
+      run: "composer validate --strict"
+      php: "8.4"
+
+  lowest:
+    name: "Lowest dependencies"
+    uses: contributte/.github/.github/workflows/php.yml@master
+    with:
+      name: "Lowest dependencies"
+      run: "make qa"
+      php: "8.4"
+      composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"

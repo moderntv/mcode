@@ -1,0 +1,48 @@
+name: "Tests"
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+  push:
+    branches: ["*"]
+
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  tests85:
+    name: "Phpunit"
+    uses: contributte/.github/.github/workflows/phpunit.yml@master
+    with:
+      php: "8.5"
+
+  tests84:
+    name: "Phpunit"
+    uses: contributte/.github/.github/workflows/phpunit.yml@master
+    with:
+      php: "8.4"
+
+  snapshots:
+    name: "Snapshots"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v6"
+
+      - name: "PHP"
+        uses: "contributte/.github/.github/actions/setup-php@master"
+        with:
+          php: "8.4"
+
+      - name: "Composer"
+        uses: "contributte/.github/.github/actions/setup-composer@master"
+        with:
+          command: "composer install --no-interaction --no-progress --prefer-dist"
+
+      - name: "Regenerate snapshots"
+        run: "make snapshots"
+
+      - name: "Check for snapshot drift"
+        run: "git diff --exit-code"

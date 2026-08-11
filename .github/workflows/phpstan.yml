@@ -1,0 +1,24 @@
+name: "Phpstan"
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+  push:
+    branches: ["*"]
+
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  phpstan85:
+    name: "Phpstan"
+    uses: contributte/.github/.github/workflows/phpstan.yml@master
+    with:
+      php: "8.5"
+
+  phpstan84:
+    name: "Phpstan"
+    uses: contributte/.github/.github/workflows/phpstan.yml@master
+    with:
+      php: "8.4"
