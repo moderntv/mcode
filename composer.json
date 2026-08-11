@@ -26,6 +26,11 @@
     "slevomat/coding-standard": "^8.31.1",
     "squizlabs/php_codesniffer": "^4.0.4"
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
