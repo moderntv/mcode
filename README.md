@@ -73,6 +73,21 @@ composer require mcode/mcode
 
 ## Development
 
+The shipped ruleset is covered by tests. Fixtures live in `tests/Sniffs/<Family>/`,
+where `Good.php` must be reported clean and `Bad.php` must produce exactly the
+report stored in its snapshot. `tests/sniffs.snapshot.json` pins the list of
+registered sniffs, so an upgrade of codesniffer or slevomat cannot silently
+add or drop a rule.
+
+```sh
+make tests      # run the test suite
+make snapshots  # regenerate snapshots after an intentional ruleset change
+make qa         # lint, phpstan and codesniffer
+```
+
+To cover a new rule, add a fixture (or extend an existing one), run
+`make snapshots` and review the snapshot diff.
+
 This package is currently maintained by these authors.
 
 <a href="https://github.com/f3l1x">
