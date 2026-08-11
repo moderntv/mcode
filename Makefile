@@ -1,28 +1,38 @@
-.PHONY: install qa cs csf phpstan tests coverage-clover coverage-html
+.PHONY: install qa lint cs csf phpstan neon tests snapshots
+
+# Everything that is linted with the shipped ruleset. Fixtures in tests/Sniffs
+# are deliberately broken, so they are excluded.
+sources := tests/bootstrap.php tests/Cases tests/Toolkit
 
 install:
 	composer update
 
-qa: phpstan cs
+qa: lint neon phpstan cs
+
+lint:
+	vendor/bin/parallel-lint bin tests
 
 cs:
 ifdef GITHUB_ACTION
-	vendor/bin/codesniffer -q --report=checkstyle src tests  | cs2pr
+	vendor/bin/phpcs -q --report=checkstyle --standard=ruleset.xml $(sources) | cs2pr
 else
-	vendor/bin/codesniffer src tests
+	vendor/bin/phpcs --standard=ruleset.xml $(sources)
 endif
 
 csf:
-	vendor/bin/codefixer src tests
+	vendor/bin/phpcbf --standard=ruleset.xml $(sources)
 
 phpstan:
-	vendor/bin/phpstan analyse -l max -c phpstan.neon src
+	vendor/bin/phpstan analyse -c phpstan.neon
+
+neon:
+	@grep -v '^[[:space:]]*#' src/phpstan.neon | grep -oE '\.\./\.\./\.\./[^ ]+\.neon' | sed 's|^\.\./\.\./\.\./|vendor/|' | while read -r file; do \
+		test -f "$$file" || { echo "Missing include: $$file"; exit 1; }; \
+		echo "OK: $$file"; \
+	done
 
 tests:
-	vendor/bin/tester -s -p php --colors 1 -C tests/cases
+	vendor/bin/phpunit
 
-coverage-clover:
-	vendor/bin/tester -s -p phpdbg --colors 1 -C --coverage ./coverage.xml --coverage-src ./src tests/cases
-
-coverage-html:
-	vendor/bin/tester -s -p phpdbg --colors 1 -C --coverage ./coverage.html --coverage-src ./src tests/cases
+snapshots:
+	php bin/snapshots
