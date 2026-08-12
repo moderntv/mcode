@@ -42,12 +42,3 @@ jobs:
       name: "Composer"
       run: "composer validate --strict"
       php: "8.4"
-
-  lowest:
-    name: "Lowest dependencies"
-    uses: contributte/.github/.github/workflows/php.yml@master
-    with:
-      name: "Lowest dependencies"
-      run: "make qa"
-      php: "8.4"
-      composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"

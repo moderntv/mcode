@@ -23,6 +23,13 @@ jobs:
     with:
       php: "8.4"
 
+  testslowest:
+    name: "Lowest dependencies"
+    uses: contributte/.github/.github/workflows/phpunit.yml@master
+    with:
+      php: "8.4"
+      composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"
+
   snapshots:
     name: "Snapshots"
     runs-on: "ubuntu-latest"
